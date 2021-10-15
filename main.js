@@ -1,5 +1,5 @@
 const player1 = {
-    name: 'Sonya',
+    name: 'Kitana',
     hp: 100,
     img: 'http://reactmarathon-api.herokuapp.com/assets/kitana.gif',
     weapon: ['axe','sword','knife'],
@@ -32,15 +32,17 @@ function createPlayer(playercl, personage ) {
     const name = document.createElement('div');
     name.classList.add('name');
     const img = document.createElement ('img');
-    const arenas = document.querySelector('.arenas')
+    
 
     player.appendChild(progressbar);
     player.appendChild(character);
     progressbar.appendChild(life);
     progressbar.appendChild(name);
     character.appendChild(img);
-    arenas.appendChild(player)
+
     
+    arenas.appendChild(player);
+       
 
     img.src = personage.img;
     name.innerText = personage.name;
@@ -48,8 +50,9 @@ function createPlayer(playercl, personage ) {
 
 };
 
+const arenas = document.querySelector('.arenas');
+
 createPlayer('player1', player1);
 createPlayer('player2', player2);
-
 
 
