@@ -39,14 +39,15 @@ function createPlayer(playercl, personage ) {
     progressbar.appendChild(life);
     progressbar.appendChild(name);
     character.appendChild(img);
-    arenas.appendChild(player)
-    
+       
 
     img.src = personage.img;
     name.innerText = personage.name;
     life.style.width = personage.hp + '%' ;
 
 };
+
+arenas.appendChild(player);
 
 createPlayer('player1', player1);
 createPlayer('player2', player2);
