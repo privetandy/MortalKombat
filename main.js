@@ -1,12 +1,5 @@
 const player1 = {
-<<<<<<< HEAD
-<<<<<<< HEAD
-<<<<<<< Updated upstream
-=======
->>>>>>> parent of 278c3cd (Merge pull request #1 from privetandy/homework-2)
-=======
->>>>>>> parent of 278c3cd (Merge pull request #1 from privetandy/homework-2)
-    name: 'Sonya',
+    name: 'Kitana',
     hp: 100,
     img: 'http://reactmarathon-api.herokuapp.com/assets/kitana.gif',
     weapon: ['axe','sword','knife'],
@@ -39,19 +32,17 @@ function createPlayer(playercl, personage ) {
     const name = document.createElement('div');
     name.classList.add('name');
     const img = document.createElement ('img');
-    const arenas = document.querySelector('.arenas')
+    
 
     player.appendChild(progressbar);
     player.appendChild(character);
     progressbar.appendChild(life);
     progressbar.appendChild(name);
     character.appendChild(img);
-<<<<<<< HEAD
-    arenas.appendChild(player)
+
     
-=======
+    arenas.appendChild(player);
        
->>>>>>> parent of 161d62a (Update main.js)
 
     img.src = personage.img;
     name.innerText = personage.name;
@@ -59,50 +50,7 @@ function createPlayer(playercl, personage ) {
 
 };
 
-<<<<<<< HEAD
-=======
-arenas.appendChild(player);
+const arenas = document.querySelector('.arenas');
 
->>>>>>> parent of 161d62a (Update main.js)
 createPlayer('player1', player1);
 createPlayer('player2', player2);
-
-
-
-<<<<<<< HEAD
-<<<<<<< HEAD
-=======
-    name: 'Kitana',
-    hp: 100,
-    img: 'http://reactmarathon-api.herokuapp.com/assets/kitana.gif',
-    weapon: ['knife' , 'sword'],
-    atack:  function () {
-        console.log(player1.name + 'fight')
-    },
-};
-
-const player2 = {
-    name: 'Sonya',
-    hp: 100,
-    img: 'http://reactmarathon-api.herokuapp.com/assets/sonya.gif',
-    weapon: ['knife' , 'sword'],
-    atack:  function t() {
-        console.log(player2.name + 'fight')
-    },
-};
-
-function createPlayer() {
-    const $player1 = document.createElement('div');
-    $player1.classlist.add('player1');
-    const $progressbar = document.createElement('div');
-    const $character = document.createElement('div');
-    $player1.appendChild($character, $progressbar);
-
-
-
-} 
->>>>>>> Stashed changes
-=======
->>>>>>> parent of 278c3cd (Merge pull request #1 from privetandy/homework-2)
-=======
->>>>>>> parent of 278c3cd (Merge pull request #1 from privetandy/homework-2)
