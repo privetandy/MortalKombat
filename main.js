@@ -46,8 +46,12 @@ function createPlayer(playercl, personage ) {
     progressbar.appendChild(life);
     progressbar.appendChild(name);
     character.appendChild(img);
+<<<<<<< HEAD
     arenas.appendChild(player)
     
+=======
+       
+>>>>>>> parent of 161d62a (Update main.js)
 
     img.src = personage.img;
     name.innerText = personage.name;
@@ -55,6 +59,11 @@ function createPlayer(playercl, personage ) {
 
 };
 
+<<<<<<< HEAD
+=======
+arenas.appendChild(player);
+
+>>>>>>> parent of 161d62a (Update main.js)
 createPlayer('player1', player1);
 createPlayer('player2', player2);
 
