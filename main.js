@@ -1,5 +1,8 @@
 const player1 = {
+<<<<<<< HEAD
 <<<<<<< Updated upstream
+=======
+>>>>>>> parent of 278c3cd (Merge pull request #1 from privetandy/homework-2)
     name: 'Sonya',
     hp: 100,
     img: 'http://reactmarathon-api.herokuapp.com/assets/kitana.gif',
@@ -54,6 +57,7 @@ createPlayer('player2', player2);
 
 
 
+<<<<<<< HEAD
 =======
     name: 'Kitana',
     hp: 100,
@@ -85,3 +89,5 @@ function createPlayer() {
 
 } 
 >>>>>>> Stashed changes
+=======
+>>>>>>> parent of 278c3cd (Merge pull request #1 from privetandy/homework-2)
