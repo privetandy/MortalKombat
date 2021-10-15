@@ -1,5 +1,5 @@
 const player1 = {
-    name: 'Sonya',
+    name: 'Kitana',
     hp: 100,
     img: 'http://reactmarathon-api.herokuapp.com/assets/kitana.gif',
     weapon: ['axe','sword','knife'],
