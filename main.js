@@ -1,4 +1,5 @@
 const player1 = {
+<<<<<<< Updated upstream
     name: 'Sonya',
     hp: 100,
     img: 'http://reactmarathon-api.herokuapp.com/assets/kitana.gif',
@@ -53,3 +54,34 @@ createPlayer('player2', player2);
 
 
 
+=======
+    name: 'Kitana',
+    hp: 100,
+    img: 'http://reactmarathon-api.herokuapp.com/assets/kitana.gif',
+    weapon: ['knife' , 'sword'],
+    atack:  function () {
+        console.log(player1.name + 'fight')
+    },
+};
+
+const player2 = {
+    name: 'Sonya',
+    hp: 100,
+    img: 'http://reactmarathon-api.herokuapp.com/assets/sonya.gif',
+    weapon: ['knife' , 'sword'],
+    atack:  function t() {
+        console.log(player2.name + 'fight')
+    },
+};
+
+function createPlayer() {
+    const $player1 = document.createElement('div');
+    $player1.classlist.add('player1');
+    const $progressbar = document.createElement('div');
+    const $character = document.createElement('div');
+    $player1.appendChild($character, $progressbar);
+
+
+
+} 
+>>>>>>> Stashed changes
