@@ -32,13 +32,16 @@ function createPlayer(playercl, personage ) {
     const name = document.createElement('div');
     name.classList.add('name');
     const img = document.createElement ('img');
-    const arenas = document.querySelector('.arenas')
+    
 
     player.appendChild(progressbar);
     player.appendChild(character);
     progressbar.appendChild(life);
     progressbar.appendChild(name);
     character.appendChild(img);
+
+    
+    arenas.appendChild(player);
        
 
     img.src = personage.img;
@@ -47,7 +50,7 @@ function createPlayer(playercl, personage ) {
 
 };
 
-arenas.appendChild(player);
+const arenas = document.querySelector('.arenas');
 
 createPlayer('player1', player1);
 createPlayer('player2', player2);
