@@ -1,6 +1,9 @@
 const player1 = {
 <<<<<<< HEAD
+<<<<<<< HEAD
 <<<<<<< Updated upstream
+=======
+>>>>>>> parent of 278c3cd (Merge pull request #1 from privetandy/homework-2)
 =======
 >>>>>>> parent of 278c3cd (Merge pull request #1 from privetandy/homework-2)
     name: 'Sonya',
@@ -58,6 +61,7 @@ createPlayer('player2', player2);
 
 
 <<<<<<< HEAD
+<<<<<<< HEAD
 =======
     name: 'Kitana',
     hp: 100,
@@ -89,5 +93,7 @@ function createPlayer() {
 
 } 
 >>>>>>> Stashed changes
+=======
+>>>>>>> parent of 278c3cd (Merge pull request #1 from privetandy/homework-2)
 =======
 >>>>>>> parent of 278c3cd (Merge pull request #1 from privetandy/homework-2)
