@@ -1,6 +1,7 @@
 const arenas = document.querySelector('.arenas');
 const randomButton = document.querySelector('.button');
 
+
 const player1 = {
     player: 1,
     name: 'Kitana',
@@ -53,38 +54,36 @@ function createPlayer(personage) {
     character.appendChild(img);    
            
     return player;
-    
+    };
+
+
+function damage () {
+return Math.ceil(Math.random() * 20);
 };
+
 
 function changeHp (player) {
     const playerLife = document.querySelector('.player'+ player.player +' .life');
-    player.hp -= Math.ceil(Math.random() * 20);
-    playerLife.style.width = player.hp + '%';
-
-    if (player.hp <= 0 ) {
-        playerLife.style.width = '0%';
-        player.hp = 0;
-    } 
+    player.hp -= damage();
     
-
     if (player.hp <= 0) {
-        arenas.appendChild(playerLose(winer()));
-        randomButton.disabled = true;
+        player.hp = 0;
+    };    
 
-    } 
-
-   
+    playerLife.style.width = player.hp + '%'; 
 };
 
 function winer() {
     const win1 = player1.name;
-    const win2 = player2.name;    
-    if (player1.hp <= 0) {
+    const win2 = player2.name;  
+    const friendship = 'friendship'  
+    if ((player1.hp <= 0) && (player2.hp <= 0)) {
+        return friendship
+    } else if (player1.hp <= 0) {
         return win2
      } else if (player2.hp <= 0) {
-        return win1};
-
-};
+        return win1};  
+     };      
 
 
 function playerLose(name) {
@@ -94,15 +93,39 @@ function playerLose(name) {
     return loseTitle;
 }
 
+function endGame() {
+    if ((player1.hp <= 0) || (player2.hp <= 0)) {
+        randomButton.innerText = 'Reset';
+        arenas.appendChild(playerLose(winer()))
+       };
+    };
+
+function restartGame() {
+        randomButton.addEventListener('click', 
+        location.reload()
+    );
+}
+    
+    
+
+
+
 randomButton.addEventListener('click', function () {
     console.log('####: Click Random Button')
 
+    if ((player1.hp > 0) && (player2.hp > 0)) {
     changeHp(player1);
     changeHp(player2);
+    endGame();
+    console.log(player1.hp);
+    console.log(player2.hp);} else if ((player1.hp <= 0) || (player2.hp <= 0))
+    restartGame();
+        
     
-})
+});
+
+
 
 arenas.appendChild(createPlayer(player1));
 arenas.appendChild(createPlayer(player2));
-
 
