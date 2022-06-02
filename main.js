@@ -73,6 +73,15 @@ function changeHp (player) {
     playerLife.style.width = player.hp + '%'; 
 };
 
+function changeHpReset (player) {
+    const playerLife = document.querySelector('.player'+ player.player +' .life');
+    player.hp =100;
+    playerLife.style.width = player.hp + '%'; 
+};
+
+
+
+
 function winer() {
     const win1 = player1.name;
     const win2 = player2.name;  
@@ -100,13 +109,15 @@ function endGame() {
        };
     };
 
+
+    
 function restartGame() {
-        randomButton.addEventListener('click', 
-        location.reload()
-    );
-}
-    
-    
+    randomButton.innerText = 'Random';
+    changeHpReset(player1);
+    changeHpReset(player2);
+    const title = document.querySelector('.loseTitle');
+    title.remove();
+};   
 
 
 
